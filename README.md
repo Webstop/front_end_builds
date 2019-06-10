@@ -102,6 +102,9 @@ bin/rails server
 
 Visit `/frontends` to access the Admin interface, and visit the `front_end` route, which will initially return 404 Not found since you haven't configured and deployed any front-end builds yet.
 
+## A note on SSH Keys
+At this time only RSA keys are supported for authentication.
+
 ### Example Next Steps with Heroku and Ember.js
 
 A common configuration is to deploy your FEB-enabled Rails app to Heroku, and deploy your Ember.js frontend to S3:
@@ -136,6 +139,11 @@ rspec
 # Admin tests, from /admin dir
 ember test
 ```
+
+## Build status
+This gem is built on Travis-CI.
+
+![](https://travis-ci.org/tedconf/front_end_builds.svg?branch=master)
 
 ## TODO
 
